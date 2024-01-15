@@ -1,1 +1,16 @@
+name: Descargar Archivo
+
+on: [push]
+
+jobs:
+  download:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Ejecutar script PowerShell
+      shell: powershell
+      run: .\download.ps1
 
