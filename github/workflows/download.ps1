@@ -9,3 +9,4 @@ Invoke-WebRequest -Uri $url -OutFile $installerPath
 
 # Ejecutar el instalador (agregando /SILENT para la instalación silenciosa)
 Start-Process -FilePath $installerPath -ArgumentList "/SILENT"
+
