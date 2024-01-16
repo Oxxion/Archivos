@@ -8,4 +8,8 @@ $installerPath = [System.IO.Path]::Combine($env:USERPROFILE, 'Desktop\Reader_Ins
 Invoke-WebRequest -Uri $url -OutFile $installerPath
 
 # Instalar Adobe Acrobat Reader (usando Start-Process)
+# Agregar un retardo de 5 segundos
+Start-Sleep -Seconds 5
+
+# Instalar Adobe Acrobat Reader (usando Start-Process)
 Start-Process -FilePath $installerPath -ArgumentList "/SILENT", "/Q", "/QUIET"
