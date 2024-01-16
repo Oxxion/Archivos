@@ -1,5 +1,5 @@
 # Definir la URL del instalador de Adobe Acrobat Reader en GitHub
-$url = 'https://raw.githubusercontent.com/Oxxion/Archivos/main/path/to/AdobeAcrobatReaderInstaller.exe'
+$url = 'https://raw.githubusercontent.com/Oxxion/Archivos/main/github/workflows/download.ps1'
 
 # Definir la ruta donde se guardará el instalador en el escritorio
 $installerPath = [System.IO.Path]::Combine($env:USERPROFILE, 'Desktop\AdobeAcrobatReaderInstaller.exe')
