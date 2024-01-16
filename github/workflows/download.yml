@@ -1,6 +1,9 @@
 name: Descargar Archivo
 
-on: [push]
+on:
+  push:
+    branches:
+      - main  # O el nombre de tu rama principal
 
 jobs:
   download:
@@ -13,4 +16,3 @@ jobs:
     - name: Ejecutar script PowerShell
       shell: powershell
       run: .\download.ps1
-
